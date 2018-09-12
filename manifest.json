@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "6.7.0.1",
+   "commerceSuiteVersion": "6.7.0.2",
    "troubleshootingModeEnabled":true,
    "extensions": [
    	   "mcc",
@@ -49,7 +49,6 @@
        "customsiteinitialdata",
        "customsitestorefront",
        "personalizationsearchsamplesaddon",
-       "optcustomerfacade",
        "acceleratorservices",
        "commerceservices",
        "springintegrationlibs",
