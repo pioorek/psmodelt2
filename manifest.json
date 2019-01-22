@@ -39,14 +39,6 @@
        "assistedservicewebservices",
        "assistedservicepromotionaddon",
        "pcmbackofficesamplesaddon",
-       "customsitefulfilmentprocess",
-       "customsitefulfilmentprocess",
-       "customsitecockpits",
-       "customsitecore",
-       "customsitefacades",
-       "customsitetest",
-       "customsiteinitialdata",
-       "customsitestorefront",
        "personalizationsearchsamplesaddon",
        "acceleratorservices",
        "commerceservices",
@@ -57,9 +49,7 @@
        "cloudhotfolder",
        "azurecloudhotfolder",
        "kymaintegrationbackoffice",
-       "kymaintegrationsampledata",
-       "cscockpit",
-       "cmscockpit"
+       "kymaintegrationsampledata"
    ],
    "storefrontAddons" : [
         {
