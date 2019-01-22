@@ -1,5 +1,5 @@
 {
-   "commerceSuiteVersion": "1808.0",
+   "commerceSuiteVersion": "1811.0",
    "troubleshootingModeEnabled":true,
    "extensions": [
    	   "mcc",
@@ -56,7 +56,9 @@
        "azurecloud",
        "cloudcommons",
        "cloudhotfolder",
-       "azurecloudhotfolder"
+       "azurecloudhotfolder",
+       "kymaintegrationbackoffice",
+       "kymaintegrationsampledata"
    ],
    "storefrontAddons" : [
         {
