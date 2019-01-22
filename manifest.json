@@ -57,7 +57,9 @@
        "cloudhotfolder",
        "azurecloudhotfolder",
        "kymaintegrationbackoffice",
-       "kymaintegrationsampledata"
+       "kymaintegrationsampledata",
+       "cscockpit",
+       "cmscockpit"
    ],
    "storefrontAddons" : [
         {
