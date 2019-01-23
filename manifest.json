@@ -1,5 +1,7 @@
 {
-    "commerceSuiteArtifact": "de.hybris.platform.suite:commerce-suite:1905.0.190108002",
+    
+    "commerceSuiteVersion": "1811.0",
+    "troubleshootingModeEnabled":true,
     "extensions": [
      	"adaptivesearchsolr",
 		"adaptivesearchbackoffice",
