@@ -98,6 +98,70 @@
                     "name": "backoffice",
                     "contextPath": "/backoffice"
                 }
+                {
+                    "name": "ec-ycommercewebservices",
+                    "contextPath": "/rest/v2/"
+                },
+                {
+                    "name": "ec-assistedservicewebservices",
+                    "contextPath": "/assistedservicewebservices/v2/"
+                },
+                {
+                    "name": "ec-b2ctelcowebservices",
+                    "contextPath": "/b2ctelcowebservices/v1/"
+                },
+                {
+                    "name": "ec-ordermanagementwebservices",
+                    "contextPath": "/ordermanagementwebservices/"
+                },
+                {
+                    "name": "ec-warehousingwebservices",
+                    "contextPath": "/warehousingwebservices/"
+                },
+                {
+                    "name": "ec-permissionswebservices",
+                    "contextPath": "/permissionswebservices/"
+                },
+                {
+                    "name": "ec-personalizationwebservices",
+                    "contextPath": "/personalizationwebservices/"
+                },
+                {
+                    "name": "ec-previewwebservices",
+                    "contextPath": "/previewwebservices/"
+                },
+                {
+                    "name": "ec-couponwebservices",
+                    "contextPath": "/couponwebservices/"
+                },
+                {
+                    "name": "ec-sapymktrecommendationwebservices",
+                    "contextPath": "/sapymktrecommendationwebservices/v1/"
+                },
+                {
+                    "name": "ec-sapymktsegmentationwebservices",
+                    "contextPath": "/sapymktsegmentationwebservices/v1/"
+                },
+                {
+                    "name": "ec-adaptivesearchwebservices",
+                    "contextPath": "/adaptivesearchwebservices/"
+                },
+                {
+                    "name": "ec-cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices/"
+                },
+                {
+                    "name": "ec-smarteditwebservices",
+                    "contextPath": "/smarteditwebservices/"
+                },
+                {
+                    "name": "ec-cmswebservices",
+                    "contextPath": "/cmswebservices/"
+                },
+                {
+                    "name": "ec-adminapi",
+                    "contextPath": "/adminapi/"
+                }
             ]
         },
         {
