@@ -228,6 +228,10 @@
 		{
 			"key": "apiregistryservices.events.exporting",
 			"value": "false"
+		}       ,
+		{
+			"key": "deployment.api.endpoint",
+			"value": "https://localhost:8088"
 		}
     ],
     "aspects": [
@@ -240,27 +244,11 @@
 	                },
 	                {
 	                    "key":"website.electronics.http",
-	                    "value":"http://electronics.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
+	                    "value":"http://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
 	                },
 	                {
 	                    "key":"website.electronics.https",
-	                    "value":"https://electronics.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-	                },
-	                {
-	                    "key":"website.apparel-uk.http",
-	                    "value":"https://apparel-uk.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-	                },
-	                {
-	                    "key":"website.apparel-uk.https",
-	                    "value":"https://apparel-uk.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-	                },
-	                {
-	                    "key":"website.apparel-de.http",
-	                    "value":"https://apparel-de.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-	                },
-	                {
-	                    "key":"website.apparel-de.https",
-	                    "value":"https://apparel-de.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
+	                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
 	                }
             ],
             "webapps": [
@@ -354,6 +342,18 @@
 				{
 				    "name": "merchandisingcmswebservices",
 				    "contextPath": "/merchandisingcmswebservices"
+				},
+				{
+				    "name": "warehousingwebservices",
+				    "contextPath": "/warehousingwebservices"
+				},
+				{
+				    "name": "assistedservicewebservices",
+				    "contextPath": "/assistedservicewebservices"
+				},
+				{
+				    "name": "ordermanagementwebservices",
+				    "contextPath": "/ordermanagementwebservices"
 				}
             ]
         },
@@ -382,27 +382,11 @@
                 },
                 {
                     "key":"website.electronics.http",
-                    "value":"http://electronics.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
+                    "value":"http://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
                 },
                 {
                     "key":"website.electronics.https",
-                    "value":"https://electronics.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-                },
-                {
-                    "key":"website.apparel-uk.http",
-                    "value":"https://apparel-uk.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-                },
-                {
-                    "key":"website.apparel-uk.https",
-                    "value":"https://apparel-uk.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-                },
-                {
-                    "key":"website.apparel-de.http",
-                    "value":"https://apparel-de.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
-                },
-                {
-                    "key":"website.apparel-de.https",
-                    "value":"https://apparel-de.c4fq-eccommerc1-p1-public.model-t.cc.commerce.ondemand.com"
+                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
                 },
                 {
                     "key":"xss.filter.header.X-Frame-Options",
