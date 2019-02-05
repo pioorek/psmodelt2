@@ -431,7 +431,7 @@
             "webapps": [
                 {
                     "name": "hac",
-                    "contextPath": ""
+                    "contextPath": "/hac"
                 },
                 {
                     "name": "mediaweb",
