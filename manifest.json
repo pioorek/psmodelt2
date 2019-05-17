@@ -1,5 +1,6 @@
 {
-   "commerceSuiteVersion": "6.7.0.1",
+   "commerceSuiteVersion": "1808.7",
+   "troubleshootingModeEnabled":true,
    "extensions": [
    	   "mcc",
        "backoffice",
@@ -26,11 +27,13 @@
        "promotionenginesamplesaddon",
        "cmswebservices",
        "smarteditwebservices",
+       "smartedit",
        "cmssmarteditwebservices",
        "permissionswebservices",
        "smarteditaddon",
        "cmssmartedit",
        "cmsbackoffice",
+       "cmsoccaddon",
        "cmsmulticountrycockpit",
        "multicountrysampledataaddon",       
        "textfieldconfiguratortemplatebackoffice",
@@ -47,7 +50,31 @@
        "customsitetest",
        "customsiteinitialdata",
        "customsitestorefront",
-       "personalizationsearchsamplesaddon"
+       "personalizationsearchsamplesaddon",
+       "previewpersonalizationweb",
+       "personalizationcmsweb",
+       "personalizationsmartedit",
+       "personalizationpromotionssmartedit",
+       "personalizationsampledataaddon",
+       "personalizationpromotions",
+       "personalizationpromotionsweb",
+       "personalizationservicesbackoffice",
+       "personalizationpromotionsbackoffice",
+       "personalizationcmsbackoffice",
+       "personalizationsearchbackoffice",
+       "personalizationsearchsmartedit",
+       "personalizationsearchweb",
+       "personalizationsearchsamplesaddon",
+       "assistedserviceatddtests",
+       "promotionengineatddtests",
+       "textfieldconfiguratortemplateatddtests",
+       "modeltacceleratorservices",
+       "personalizationintegration",
+       "personalizationyprofile",
+       "profileservices",
+       "yaasconfigurationbackoffice",
+       "profiletagaddon"
+
    ],
    "storefrontAddons" : [
         {
@@ -114,10 +141,17 @@
             "addon": "assistedservicestorefront",
             "storefront": "customsitestorefront",
             "template": "yacceleratorstorefront"
-        }
-        
-        
-                
+        },
+        {
+            "addon": "profiletagaddon",
+            "storefront": "customsitestorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "cmsoccaddon",
+            "storefront": "ycommercewebservices",
+            "template": "ycommercewebservices"
+        }    
         
     ],
    "properties": [
@@ -145,14 +179,71 @@
             "persona": "production"
         },
         {
-     	 "key":"hac.webroot",
-     	 "value":"/hac"
-    	}
+     	      "key":"hac.webroot",
+     	      "value":"/hac"
+    	  },
+        {
+            "key": "multicountrysampledataaddon.import.active",
+            "value": "false"
+        }
     ],
    "aspects": [
          {
             "name": "backoffice",
-            "properties": [],
+            "properties": [
+                {
+                    "key": "regioncache.queryregion.evictionpolicy",
+                    "value": "LRU"
+                },
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                },
+                {
+                    "key":"website.electronics.http",
+                    "value":"http://backoffice.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                                    },
+                {
+                    "key":"website.electronics.https",
+                    "value":"https://backoffice.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-uk.http",
+                    "value":"http://backoffice.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com"
+                },
+                {
+                    "key":"website.apparel-uk.https",
+                    "value":"https://backoffice.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-de.http",
+                    "value":"http://backoffice.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-de.https",
+                    "value":"https://backoffice.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com"
+                },
+                {
+                    "key":"xss.filter.header.X-Frame-Options",
+                    "value":""
+                }
+            ],
             "webapps": [
                 {
                     "name": "hac",
@@ -165,15 +256,123 @@
                 {
                     "name": "backoffice",
                     "contextPath": "/backoffice"
+                },
+                {
+                    "name": "customsitestorefront",
+                    "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                },
+                {
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
+                },
+                {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
+                },
+                {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices"
+                },
+                {
+                    "name": "personalizationsmartedit",
+                    "contextPath": "/personalizationsmartedit"
+                },
+                {
+                    "name": "personalizationpromotionssmartedit",
+                    "contextPath": "/personalizationpromotionssmartedit"
+                },
+                {
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                },
+                {
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                },
+                {
+                    "name": "personalizationwebservices",
+                    "contextPath": "/personalizationwebservices"
+                },
+                {
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
                 }
             ]
         },
         {
             "name": "accstorefront",
             "properties": [
-               {
+                {
                     "key": "regioncache.queryregion.evictionpolicy",
                     "value": "LRU"
+                },
+                {
+                    "key": "spring.session.enabled",
+                    "value": "true"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value":"async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value":""
+                },
+                {
+                    "key":"website.electronics.http",
+                    "value":"http://electronics.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                                    },
+                {
+                    "key":"website.electronics.https",
+                    "value":"https://electronics.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-uk.http",
+                    "value":"http://apparel-uk.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com"
+                },
+                {
+                    "key":"website.apparel-uk.https",
+                    "value":"https://apparel-uk.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-de.http",
+                    "value":"http://apparel-de.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com" 
+                },
+                {
+                    "key":"website.apparel-de.https",
+                    "value":"https://apparel-de.csemea-csemeaprod-d2-public.model-t.cc.commerce.ondemand.com"
+                },
+                {
+                    "key":"xss.filter.header.X-Frame-Options",
+                    "value":""
                 }
             ],
             "webapps": [
@@ -188,6 +387,66 @@
                 {
                     "name": "customsitestorefront",
                     "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                },
+                {
+                    "name": "ycommercewebservices",
+                    "contextPath": "/rest"
+                },
+                {
+                    "name": "oauth2",
+                    "contextPath": "/authorizationserver"
+                },
+                {
+                    "name": "adaptivesearchwebservices",
+                    "contextPath": "/adaptivesearchwebservices"
+                },
+               {
+                    "name": "smartedit",
+                    "contextPath": "/smartedit"
+                },
+                {
+                    "name": "cmssmartedit",
+                    "contextPath": "/cmssmartedit"
+                },
+                {
+                    "name": "smarteditwebservices",
+                    "contextPath": "/smarteditwebservices"
+                },
+                {
+                    "name": "cmssmarteditwebservices",
+                    "contextPath": "/cmssmarteditwebservices"
+                },
+                {
+                    "name": "personalizationsmartedit",
+                    "contextPath": "/personalizationsmartedit"
+                },
+                {
+                    "name": "personalizationpromotionssmartedit",
+                    "contextPath": "/personalizationpromotionssmartedit"
+                },
+                {
+                    "name": "cmswebservices",
+                    "contextPath": "/cmswebservices"
+                },
+                {
+                    "name": "permissionswebservices",
+                    "contextPath": "/permissionswebservices"
+                },
+                {
+                    "name": "previewwebservices",
+                    "contextPath": "/previewwebservices"
+                },
+                {
+                    "name": "personalizationwebservices",
+                    "contextPath": "/personalizationwebservices"
+                },
+                {
+                    "name": "personalizationsearchsmartedit",
+                    "contextPath": "/personalizationsearchsmartedit"
                 }
             ]
         },
@@ -232,4 +491,3 @@
         }
     ]
 }
-
