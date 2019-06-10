@@ -48,9 +48,7 @@
        "cloudcommons",
        "cloudhotfolder",
        "azurecloudhotfolder",
-       "yacceleratorstorefront",
-       "kymaintegrationbackoffice",
-       "kymaintegrationsampledata"
+       "yacceleratorstorefront"
    ],
    "properties": [
         {
@@ -159,6 +157,10 @@
                 {
                     "name": "mediaweb",
                     "contextPath": "/medias"
+                },
+                {
+                    "name": "backoffice",
+                    "contextPath": "/backoffice"
                 }
             ]
         }
