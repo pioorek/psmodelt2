@@ -1,35 +1,160 @@
 {
-   "commerceSuiteVersion": "6.7.0.1",
-   "extensions": [
-       "optcustomerfacade",
-       "yacceleratorstorefront",
-       "backoffice",
-       "platformbackoffice",
-       "electronicsstore",
-       "basecommercebackoffice",       
-       "yacceleratorfulfilmentprocess",
-       "solrfacetsearchbackoffice",
-       "commerceservicesbackoffice"
-   ],
-   "storeFrontExtension": "yacceleratorstorefront",
-   "storeFrontWebRoot": "/yacceleratorstorefront",
-   "properties": [
+    "commerceSuiteVersion": "19.05.0",
+    "extensions": [
+        "ordermanagementaddon",
+        "orderselfserviceaddon",
+        "ordermanagementwebservices",
+        "b2bordermanagementwebservices",
+        "warehousing",
+        "warehousingbackoffice",
+        "warehousingwebservices",
+        "adaptivesearchsolr",
+        "adaptivesearchbackoffice",
+        "adaptivesearchsamplesaddon",
+        "b2bcommercebackoffice",
+        "commerceservicesbackoffice",
+        
+        "yacceleratorcockpits",
+        "yacceleratorinitialdata",
+        "yacceleratorordermanagement",
+        "yacceleratorstorefront",
+        "yaddon",
+        "ycommercewebservices",
+        
+        "apparelstore",
+        "electronicsstore",
+        "powertoolsstore",
+        "solrserver",
+        "acceleratorwebservicesaddon",
+        "b2bacceleratoraddon",
+        "commerceorgaddon",
+        "commerceorgsamplesaddon",
+                                        
+        "assistedservicestorefront",
+        "assistedservicewebservices",
+        "customerticketingaddon",
+        "customersupportbackoffice",
+        "ticketsystembackoffice",
+        "consignmenttrackingbackoffice",
+        
+        "rulebuilderbackoffice",
+        "couponbackoffice",
+        "droolsruleengineservices",
+        "couponfacades",
+        "promotionenginesamplesaddon",
+        "consignmenttrackingaddon",
+        "pcmbackofficesamplesaddon",
+        "consignmenttrackingoccaddon",
+        
+        "odata2webservices",
+        "integrationbackoffice",
+        "sapcoreaddon",
+        "sapcoreconfigurationbackoffice",
+        "sapmodelbackoffice",
+        "sapcustomerb2bbackoffice",
+        "ysapomsfulfillment",
+        "sapcpiadapter",
+        "sapcpicustomerexchange",
+        "sapcpicustomerexchangeb2b",
+        "sapcpiorderexchangeoms",
+        "sapcpiorderexchangeomsb2b",
+        "saporderexchangebackoffice",
+        "sapcpiproductexchange",
+        "sapcoretest"
+    ],
+    "properties": [
         {
-            "key": "test.property.1",
-            "value": "test.property.1.value"
+            "key": "website.electronics.http",
+            "value": "${HTTTP ELECTRONICS URL}"
         },
         {
-            "key": "test.property.2",
-            "value": "test.property.2.value"
+            "key": "website.electronics.https",
+            "value": "${HTTPS ELECTRONICS URL}"
+        },
+        {
+            "key": "keygen.customer.sap_customer_id.start",
+            "value": "${SAP-CUSTOMER-ID.START}"
+        },
+        {
+            "key": "keygen.customer.sap_contact_id.start",
+            "value": "${SAP-CONTACT-ID.START}"
+        },
+        {
+            "key": "keygen.order.code.start",
+            "value": "${KEYGEN-CODE-START}"
+        },
+        {
+            "key": "apcustomerexchange.outbound.datahub.feed",
+            "value": "SAPCONSUMER_OUTBOUND_FEED"
+        },
+        {
+            "key": "numberseries.cache.size.order_code",
+            "value": "1"
+        },
+        {
+            "key": "saporderexchange.orderoutbound.maxRetries",
+            "value": "3"
+        },
+        {
+            "key": "og4j.logger.de.hybris.platform.sap.orderexchange",
+            "value": "debug"
         }
     ],
-   "project": "ps_cc2v1",
-   "recipe": "pipeline_b2c_dockerized",
-   "resultingImageVersion": "ps_cc2v1",    
-   "aspects": [
-         {
+    "storefrontAddons": [
+        {
+            "addon": "commerceorgsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "customerticketingaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "promotionenginesamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "adaptivesearchsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "pcmbackofficesamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "ordermanagementaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "orderselfserviceaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "consignmenttrackingaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "assistedservicestorefront",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+        {
+            "addon": "sapcoreaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        }
+    ],
+    "aspects": [
+        {
             "name": "backoffice",
-            "properties": [],
             "webapps": [
                 {
                     "name": "hac",
@@ -42,79 +167,65 @@
                 {
                     "name": "backoffice",
                     "contextPath": "/backoffice"
+                },
+                {
+                    "name": "odata2webservices",
+                    "contextPath": "/odata2webservices"
                 }
             ]
         },
         {
             "name": "accstorefront",
             "properties": [
-               {
-                    "key": "regioncache.queryregion.evictionpolicy",
-                    "value": "LRU"
-                }
-            ],
-            "webapps": [
                 {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
-                {
-                    "name": "mediaweb",
-                    "contextPath": "/medias"
-                },
-                {
-                    "name": "yacceleratorstorefront",
-                    "contextPath": "/backoffice"
-                }
-            ]
-        },
-       {
-            "name": "backgroundProcessing",
-            "properties": [
-                {
-                    "key": "cluster.node.groups",
-                    "value": "backgroundProcessing"
-                },
-                {
-                    "key": "task.workers.max",
-                    "value": "40"
-                },
-                {
-                    "key": "impex.import.workers",
-                    "value": "8"
-                },
-                {
-                    "key": "catalog.sync.workers",
-                    "value": "8"
-                },
-                {
-                    "key": "task.polling.interval",
-                    "value": "1"
-                },
-                {
-                    "key": "processengine.process.canjoinpreviousnode.default",
+                    "key": "spring.session.enabled",
                     "value": "true"
                 },
                 {
-                    "key": "yacceleratorfulfilmentprocess.fraud.scoreLimit",
-                    "value": "10000"
-                }                  
+                    "key": "spring.session.yacceleratorstorefront.save",
+                    "value": "async"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.name",
+                    "value": "JSESSIONID"
+                },
+                {
+                    "key": "spring.session.yacceleratorstorefront.cookie.path",
+                    "value": "/"
+                },
+                {
+                    "key":"storefrontContextRoot",
+                    "value": ""
+                }
             ],
             "webapps": [
-                {
-                    "name": "hac",
-                    "contextPath": "/hac"
-                },
                 {
                     "name": "mediaweb",
                     "contextPath": "/medias"
                 },
                 {
                     "name": "yacceleratorstorefront",
-                    "contextPath": "/backoffice"
+                    "contextPath": ""
+                },
+                {
+                    "name": "acceleratorservices",
+                    "contextPath": "/acceleratorservices"
+                }
+            ]
+        },
+        {
+            "name": "backgroundProcessing",
+            "properties": [],
+            "webapps": [
+                {
+                    "name": "hac",
+                    "contextPath": ""
+                },
+                {
+                    "name": "mediaweb",
+                    "contextPath": "/medias"
                 }
             ]
         }
     ]
 }
-
