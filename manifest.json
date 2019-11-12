@@ -1,5 +1,5 @@
 {
-    "commerceSuiteVersion": "19.05.0",
+    "commerceSuiteVersion": "1905.0",
     "extensions": [
         "ordermanagementaddon",
         "orderselfserviceaddon",
