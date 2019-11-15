@@ -56,6 +56,7 @@
         "sapcpiadapter",
         "sapcpicustomerexchange",
         "sapcpicustomerexchangeb2b",
+        "sapcpiorderexchange",
         "sapcpiorderexchangeoms",
         "sapcpiorderexchangeomsb2b",
         "saporderexchangebackoffice",
@@ -65,11 +66,11 @@
     "properties": [
         {
             "key": "website.electronics.http",
-            "value": "http://jsapps.c1swetbu-emeasuppo1-p1-public.model-t.cc.commerce.ondemand.com/"
+            "value": "http://accstorefront.c1swetbu-emeasuppo1-p1-public.model-t.cc.commerce.ondemand.com"
         },
         {
             "key": "website.electronics.https",
-            "value": "https://jsapps.c1swetbu-emeasuppo1-p1-public.model-t.cc.commerce.ondemand.com/"
+            "value": "https://accstorefront.c1swetbu-emeasuppo1-p1-public.model-t.cc.commerce.ondemand.com"
         },
         {
             "key": "keygen.customer.sap_customer_id.start",
