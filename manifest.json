@@ -216,7 +216,7 @@
                  },
                  {
                      "name": "yacceleratorstorefront",
-                     "contextPath": ""
+                     "contextPath": "/electronics/"
  
                  }
              ]
