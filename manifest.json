@@ -211,6 +211,14 @@
             "name": "accstorefront",
             "properties": [
                 {
+                    "key": "website.powertools.http",
+                    "value": "http://accstorefront.c1swetbu-emeasuppo1-p1-public.model-t.cc.commerce.ondemand.com/yacceleratorstorefront"
+                },
+                {
+                    "key": "website.powertools.https",
+                    "value": "https://accstorefront.c1swetbu-emeasuppo1-p1-public.model-t.cc.commerce.ondemand.com/yacceleratorstorefront"
+                },
+                {
                     "key": "spring.session.enabled",
                     "value": "true"
                 },
