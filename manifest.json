@@ -280,7 +280,8 @@
 				"contextPath": "/adaptivesearchwebservices"
 			 },
 			 {
-				"name": "odata2webservices"
+				"name": "odata2webservices",
+                "contextPath": "/odata2webservices"
 			 }
 
     ]
