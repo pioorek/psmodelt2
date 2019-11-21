@@ -62,7 +62,9 @@
             "sapcpiorderexchangeoms",
             "sapcpiorderexchangeomsb2b",
             "saporderexchangebackoffice",
-            "sapcpiproductexchange"
+            "sapcpiproductexchange",
+            "ysapomsfulfillment",
+            "sapcoretest"
 
         ],
     "properties": [
