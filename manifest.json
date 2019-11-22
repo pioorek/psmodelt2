@@ -55,7 +55,6 @@
             "sapcoreconfigurationbackoffice",
             "sapmodelbackoffice",
             "sapcustomerb2bbackoffice",
-            "ysapcpiomsfulfillment",
             "sapcpiadapter",
             "sapcpicustomerexchange",
             "sapcpicustomerexchangeb2b",
@@ -63,7 +62,7 @@
             "sapcpiorderexchangeb2b",
             "saporderexchangebackoffice",
             "sapcpiproductexchange",
-            "ysapomsfulfillment",
+            "ysaporderfulfillment",
             "sapcoretest"
 
         ],
