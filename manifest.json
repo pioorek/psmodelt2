@@ -150,11 +150,6 @@
 		    "template": "yacceleratorstorefront"
 		},
 		{
-		    "addon": "personalizationsearchsamplesaddon",
-		    "storefront": "yacceleratorstorefront",
-		    "template": "yacceleratorstorefront"
-		},
-		{
 		    "addon": "acceleratorwebservicesaddon",
 		    "storefront": "ycommercewebservices",
 		    "template": "ycommercewebservices"
