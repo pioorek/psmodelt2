@@ -90,7 +90,19 @@
       "warehousing",
       "warehousingbackoffice",
       "warehousingwebservices",
-      "sapppspricing"
+      "sapppspricing",
+      "sapoaamodel",
+"sapoaacommerceservices",
+"sapoaacommercefacades",
+"sapoaaaddon",
+"sapoaabackoffice",
+"sapcpioaaintegration",
+"saparticlemodel",
+"saparticlesearch",
+"saparticlebackoffice",
+"saparticleb2caddon",
+"sapcpiadmintegration",
+"sapcpioaaorderintegration"
     ],
 	"storefrontAddons": [
 		{
