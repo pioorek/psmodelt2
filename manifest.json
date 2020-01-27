@@ -100,8 +100,8 @@
 		},
     {
 		    "addon": "consignmenttrackingaddon",
-		    "storefront": "ycommercewebservices",
-		    "template": "ycommercewebservices"
+		    "storefront": "yacceleratorstorefront",
+		    "template": "yacceleratorstorefront"
 		},
 		{
 		    "addon": "promotionenginesamplesaddon",
