@@ -101,7 +101,8 @@
 "saparticlebackoffice",
 "saparticleb2caddon",
 "sapcpiadmintegration",
-"sapcpioaaorderintegration"
+"sapcpioaaorderintegration",
+"sapcoreconfigurationbackoffice"
     ],
 	"storefrontAddons": [
 		{
