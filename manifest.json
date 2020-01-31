@@ -226,20 +226,8 @@
 			"value": "true"
 		},
 		{
-			"key": "ccv2.services.api.url.0",
-			"value": "https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
-		},
-		{
 			"key": "update.executeProjectData.extensionName.list",
 			"value": "kymaintegrationservices"
-		},
-		{
-			"key": "kymaintegrationservices.truststore.cacerts.path",
-			"value": "${platformhome}/resources/devcerts/ydevelopers.jks"
-		},
-		{
-			"key": "kymaintegrationservices.truststore.password",
-			"value": "123456"
 		}
     ],
     "aspects": [
@@ -253,11 +241,11 @@
 	                },
 	                {
 	                    "key":"website.electronics.http",
-	                    "value":"http://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+	                    "value":"http://accstorefront.csemea-csemeaprod-d9-public.model-t.cc.commerce.ondemand.com/"
 	                },
 	                {
 	                    "key":"website.electronics.https",
-	                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+	                    "value":"https://accstorefront.csemea-csemeaprod-d9-public.model-t.cc.commerce.ondemand.com/"
 	                }
 	    ],
             "webapps": [
@@ -324,11 +312,11 @@
                 },
                 {
                     "key":"website.electronics.http",
-                    "value":"http://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+                    "value":"http://accstorefront.csemea-csemeaprod-d9-public.model-t.cc.commerce.ondemand.com/"
                 },
                 {
                     "key":"website.electronics.https",
-                    "value":"https://accstorefront.csemea-csemeaprod-d3-public.model-t.cc.commerce.ondemand.com"
+                    "value":"https://accstorefront.csemea-csemeaprod-d9-public.model-t.cc.commerce.ondemand.com/"
                 },
                 {
                     "key":"xss.filter.header.X-Frame-Options",
